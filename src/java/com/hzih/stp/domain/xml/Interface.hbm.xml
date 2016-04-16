@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class table="interface" name="com.hzih.stp.domain.InterfaceObj">
+    <id access="field" name="id" type="long" column="id" length="10">
+      <generator class="increment"/>
+    </id>
+    <!--<property name="name" length="200" column="name" access="field" type="string"/>-->
+    <!--<property name="tableType" length="200" column="tableType" access="field" type="string"/>-->
+    <!--<property name="interfaceType" length="200" column="interfaceType" access="field" type="string"/>-->
+    <property name="interfaceNumber" length="50" column="interfaceNumber" access="field" type="string"/>
+    <!--<property name="interfaceDesc" length="200" column="interfaceDesc" access="field" type="string"/>-->
+    <property name="tableName" length="200" column="tableName" access="field" type="string"/>
+    <property name="tableNameEn" length="200" column="tableName_EN" access="field" type="string"/>
+    <!--<property name="containsPerson" length="200" column="containsPerson" access="field" type="string"/>-->
+    <!--<property name="queryField" length="500" column="queryField" access="field" type="string"/>-->
+    <property name="conditionsField" length="500" column="conditionsField" access="field" type="string"/>
+    <property name="url" length="500" column="url" access="field" type="string"/>
+    <property name="status" length="1" column="status" access="field" type="string"/>
+    <property name="apply" length="500" column="apply" access="field" type="string"/>
+    <!--<property name="depart" length="500" column="depart" access="field" type="string"/>-->
+  </class>
+</hibernate-mapping>

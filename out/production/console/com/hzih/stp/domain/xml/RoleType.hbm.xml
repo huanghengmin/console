@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class table="role_type" name="com.hzih.stp.domain.RoleType">
+    <id access="field" name="id" type="java.lang.Long" column="id">
+      <generator class="increment"/>
+    </id>
+    <property name="name" column="name" access="field" type="java.lang.String"/>
+    <property name="permission" column="permission" access="field" type="java.lang.String"/>
+    <property name="autoUnLock" column="autoUnLock" access="field" type="java.lang.Integer"/>
+  </class>
+</hibernate-mapping>

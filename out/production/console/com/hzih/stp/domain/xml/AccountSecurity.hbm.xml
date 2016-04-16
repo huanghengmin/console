@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class table="account_security" name="com.hzih.stp.domain.AccountSecurity">
+    <id access="field" name="id" type="long" column="id" length="20">
+      <generator class="assigned"/>
+    </id>
+    <property name="infoLevel" column="infoLevel" access="field" type="string"/>
+    <property name="appName" column="appName" access="field" type="string"/>
+    <property name="isFilter" column="isFilter" access="field" type="boolean"/>
+    <property name="isVirusScan" column="isVirusScan" access="field" type="boolean"/>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class table="tables" name="com.hzih.stp.domain.Tables">
+    <id access="field" name="id" type="long" column="id" length="10">
+      <generator class="increment"/>
+    </id>
+    <property name="name" length="200" column="name" access="field" type="string"/>
+    <property name="nameEn" length="200" column="nameEn" access="field" type="string"/>
+    <property name="countAll" length="11" column="countAll" access="field" type="int"/>
+    <property name="countNew" length="11" column="countNew" access="field" type="int"/>
+    <property name="updateTime" column="updateTime" access="field" type="java.util.Date"/>
+  </class>
+</hibernate-mapping>
